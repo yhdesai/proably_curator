@@ -30,11 +30,17 @@ import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 
+import com.google.android.youtube.player.YouTubeBaseActivity;
+import com.google.android.youtube.player.YouTubePlayer;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import com.google.android.youtube.player.YouTubeThumbnailView;
+import com.google.android.youtube.player.YouTubeThumbnailLoader;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -147,6 +153,8 @@ public class MainActivity extends AppCompatActivity {
             public void onCancelled(DatabaseError databaseError) {}
         };
         mMessagesDatabaseReference.addChildEventListener(mChildEventListener);
+
+
     }
 
     @Override
@@ -161,3 +169,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 }
+
+
+
+

@@ -17,17 +17,24 @@
         android:id="@+id/messageTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="16dp"
+        android:textSize="16sp"
         android:layout_weight="0"
         tools:text="Message" />
 
+
+
     <TextView
-        android:id="@+id/nameyextView"
+        android:id="@+id/nameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="16dp"
+        android:textSize="16sp"
         android:layout_marginBottom="30dp"
         android:layout_weight="0"
         tools:text="Name" />
+
+    <com.google.android.youtube.player.YouTubeThumbnailView
+        android:id="@+id/yt_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
